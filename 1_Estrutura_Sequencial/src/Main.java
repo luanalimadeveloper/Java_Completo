@@ -119,6 +119,7 @@ public class Main {
 		sc.close();	
 		*/
 		
+		/*
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
@@ -135,7 +136,30 @@ public class Main {
 		System.out.println("Voce digitou: " + z);
 		
 		sc.close();	
+		*/
 		
+		////////////////////////////////////
+		/// Entrada de Dados em Java - Parte 2
+		
+		Scanner sc = new Scanner(System.in);
+		int x;
+		String s1, s2, s3;
+		
+		x = sc.nextInt();
+		sc.nextLine(); // consumir quebra de linha que ficou pendente
+		
+		s1 = sc.nextLine();
+		s2 = sc.nextLine();
+		s3 = sc.nextLine();
+		
+		System.out.println("Dados Digitados: ");
+		System.out.println(x);
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s3);
+		
+		sc.close();
+
 	}
 
 }
