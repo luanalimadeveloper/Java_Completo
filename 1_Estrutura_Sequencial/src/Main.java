@@ -1,4 +1,5 @@
 import java.util.Locale;
+import java.util.Scanner;
 
 public class Main {
 
@@ -61,6 +62,7 @@ public class Main {
 		////////////////////////////////////
 		/// Processamento de dados em Java, Casting 
 		
+		/*
 		int a, b;
 		double resultado;
 		
@@ -69,7 +71,71 @@ public class Main {
 		
 		resultado = (double) a / b;
 		System.out.println(resultado);
-
+		
+		*/
+		////////////////////////////////////
+		/// Entrada de Dados 
+		
+		/*
+		Scanner sc = new Scanner(System.in);
+		
+		String x;
+		x = sc.next();
+		System.out.println("Voce digitou: " + x);
+		
+		sc.close();
+		*/
+		
+		/*
+		Scanner sc = new Scanner(System.in);
+		
+		int x;
+		x = sc.nextInt();
+		System.out.println("Voce digitou: " + x);
+		
+		sc.close();
+		*/
+		
+		/*
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		double x;
+		x = sc.nextDouble();
+		System.out.println("Voce digitou: " + x);
+		System.out.printf("Voce digitou: %.2f%n", x);
+		
+		sc.close();
+		*/ 
+		
+		/*
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		char x;
+		x = sc.next().charAt(0);
+		System.out.println("Voce digitou: " + x);
+		
+		sc.close();	
+		*/
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		String x;
+		int y;
+		double z; 
+		
+		x = sc.next();
+		y = sc.nextInt();
+		z = sc.nextDouble();
+	
+		System.out.println("Voce digitou: " + x);
+		System.out.println("Voce digitou: " + y);
+		System.out.println("Voce digitou: " + z);
+		
+		sc.close();	
+		
 	}
 
 }
