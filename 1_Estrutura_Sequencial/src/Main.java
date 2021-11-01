@@ -34,6 +34,7 @@ public class Main {
 		*/
 		////////////////////////////////////
 		/// Saida de dados em Java - Exercicio 
+		/*
 		
 		String product1 = "Computer";
 		String product2 = "Office desk";
@@ -54,6 +55,20 @@ public class Main {
 		
 		Locale.setDefault(Locale.US);
 		System.out.printf("US decimal point: %.3f", measure);
+		
+		
+		*/
+		////////////////////////////////////
+		/// Processamento de dados em Java, Casting 
+		
+		int a, b;
+		double resultado;
+		
+		a = 5;
+		b = 2;
+		
+		resultado = (double) a / b;
+		System.out.println(resultado);
 
 	}
 
