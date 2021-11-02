@@ -48,7 +48,7 @@ public class Main {
 		
 		///////////////////////////////////////////////
 		// Switch-case 
-
+		/*
 		Scanner sc = new Scanner(System.in);
 		int x = sc.nextInt();
 		
@@ -82,6 +82,15 @@ public class Main {
 		
 		System.out.println("Dia da semana: " + dia);
 		sc.close();
+		
+		*/
+		/////////////////////////////////////////////
+		// Condicional ternária 
+		
+		double preco = 100;
+		double desconto = (preco < 20.0) ? preco * 0.5 : preco * 0.05;
+		
+		System.out.println(desconto);
 	}
 
 }
