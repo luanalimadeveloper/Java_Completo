@@ -6,23 +6,40 @@ public class Product {
 	private int quantity;
 	
 	// Construtor Padrao
-	public Product(){
-		
+	public Product() {	
 	}
-	
+
 	// Construtor Personalizado - Utlizado quando se quer criar um objeto e obrigatoriamente tem que passar o parametros
 	public Product(String name, double price, int quantity) {
-		//this - referencia ao atributo do objeto e não ao parametro
 		this.name = name;
 		this.price = price;
-		this.quantity = quantity; 
-		
+		this.quantity = quantity;
 	}
 	
 	// SOBRECARGA - Disponibilizar mais de uma versao da mesma operaçao
-	public Product(String name, double price) {	
+	public Product(String name, double price) {
 		this.name = name;
 		this.price = price;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public int getQuantity() {
+		return quantity;
 	}
 
 	public double totalValueInStock() {
@@ -35,26 +52,6 @@ public class Product {
 
 	public void removeProducts(int quantity) {
 		this.quantity -= quantity;
-	}
-	
-	public String getName() {
-		return name;
-	}
-	
-	public void setName(String name) {
-		this.name = name;
-	}
-	
-	public double getPrice() {
-		return price;
-	}
-	
-	public void setPrice(double price) {
-		this.price = price;
-	}
-	
-	public int getQuantity() {
-		return quantity;
 	}
 
 	public String toString() {
