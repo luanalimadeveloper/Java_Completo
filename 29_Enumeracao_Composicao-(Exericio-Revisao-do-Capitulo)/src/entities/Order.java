@@ -9,7 +9,8 @@ import entities.enums.OrderStatus;
 
 public class Order {
 	
-	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+	SimpleDateFormat sdf1 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+	private static SimpleDateFormat sdf2 = new SimpleDateFormat("dd/MM/yyyy");
 	
 	private Date moment ; 
 	private OrderStatus status;
@@ -68,12 +69,12 @@ public class Order {
 	
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("Order Moment: " + sdf.format(moment) + "\n");
+		sb.append("Order Moment: " + sdf1.format(moment) + "\n");
 		sb.append("Order Status: " + status + "\n");
-		sb.append("Client: " + client.getName() + " " + sdf.format(client.getBirthDate()) + " - " + client.getEmail() + "\n");
+		sb.append("Client: " + client.getName() + " " + sdf2.format(client.getBirthDate()) + " - " + client.getEmail() + "\n");
 		
 		for (OrderItem item : items) { 
-			sb.append(item.getProduct() + ", " + 
+			sb.append(item.getProduct().getName() + ", " + 
 					"$" + item.getPrice() + ", " + 
 					"Quantity: " + item.getQuantity() + ", " + 
 					"Subtotal: " + item.subTotal() + "\n");
