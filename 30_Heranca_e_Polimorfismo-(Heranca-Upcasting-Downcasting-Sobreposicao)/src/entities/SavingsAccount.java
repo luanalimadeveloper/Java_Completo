@@ -1,5 +1,6 @@
 package entities;
 
+// final - this class SavingsAccount cant be inheritance for another class
 public class SavingsAccount extends Account{
 	
 	private Double interestRate;
@@ -23,6 +24,11 @@ public class SavingsAccount extends Account{
 	
 	public void updateBalance() {
 		balance += balance * interestRate;
+	}
+	
+	@Override
+	public final void withdraw(double amount) {
+		balance -= amount;
 	}
 
 }
