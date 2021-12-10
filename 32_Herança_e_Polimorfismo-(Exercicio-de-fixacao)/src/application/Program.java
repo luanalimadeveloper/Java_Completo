@@ -54,6 +54,7 @@ public class Program {
 			}
 	
 		}
+		
 		System.out.println("Price Tags");
 		
 		for (Product prod : listProducts) {
