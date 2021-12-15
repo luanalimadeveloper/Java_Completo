@@ -30,6 +30,6 @@ public  abstract class TaxPayer {
 	}
 	
 	// abstract because is very generic 
-	public abstract double Impost();
+	public abstract Double tax();
 	
 }
